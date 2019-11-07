@@ -30,28 +30,33 @@ public class List {
 	 * @param args
 	 * @wbp.parser.entryPoint
 	 * 
-	 * 
-	 *                        public static void main(String[] args) { //start
-	 *                        models CheckBoxes model = new CheckBoxes(); Carrinho
-	 *                        carrinho = new Carrinho(); PaymentMethod pm = new
-	 *                        PaymentMethod();
-	 * 
-	 *                        //start interface //Payment p = new Payment();
-	 * 
-	 *                        //start controllers Controller c = new
-	 *                        Controller(model, carrinho, pm);
-	 * 
-	 *                        //start view Confirmacao confirmacaoTela = new
-	 *                        Confirmacao(c); List list = new List(c);
-	 * 
-	 *                        //link controller
-	 *                        c.addScreenConfirmacao(confirmacaoTela);
-	 * 
-	 *                        //start program list.open(); }
-	 * 
-	 *                        /** Open the window.
-	 */
+	 
+	public static void main(String[] args) {
+		// start
+		CheckBoxes model = new CheckBoxes();
+		Carrinho carrinho = new Carrinho();
+		PaymentMethod pm = new PaymentMethod();
 
+		// start interface //Payment p = new Payment();
+
+		// start
+		Controller c = new Controller(model, carrinho, pm);
+
+		// start view
+		Confirmacao confirmacaoTela = new Confirmacao(c);
+		List list = new List(c);
+
+		// link controller
+		c.addScreenConfirmacao(confirmacaoTela);
+
+		// start program
+		list.open();
+	}*/
+
+	/**
+	 * Open the window.
+	 * 
+	 */
 	public void open() {
 		Display display = Display.getDefault();
 		createContents(c);
@@ -69,7 +74,7 @@ public class List {
 	 */
 	protected void createContents(Controller c) {
 		shell = new Shell();
-		shell.setSize(1280, 1024);
+		shell.setSize(897, 736);
 		shell.setText("SWT Application");
 
 		Button btnNewButton = new Button(shell, SWT.NONE);
@@ -80,7 +85,7 @@ public class List {
 				shell.close();
 			}
 		});
-		btnNewButton.setBounds(10, 10, 643, 42);
+		btnNewButton.setBounds(10, 10, 861, 42);
 		btnNewButton.setText("COMPRAR");
 
 		Label image1 = new Label(shell, SWT.NONE);
@@ -155,7 +160,7 @@ public class List {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				c.check3();
-				
+
 			}
 		});
 		check3.setFont(SWTResourceManager.getFont("Segoe UI", 15, SWT.NORMAL));
@@ -187,21 +192,22 @@ public class List {
 		check4.setFont(SWTResourceManager.getFont("Segoe UI", 15, SWT.NORMAL));
 		check4.setBounds(657, 388, 231, 49);
 		check4.setText("Adicionar ao carrinho");
-		
+
 		Label image5 = new Label(shell, SWT.NONE);
-		image5.setImage(SWTResourceManager.getImage("C:\\Users\\Joao\\Documents\\projetos\\trabalhos\\E4PASV2\\assets\\en169war.jpg"));
+		image5.setImage(SWTResourceManager
+				.getImage("C:\\Users\\Joao\\Documents\\projetos\\trabalhos\\E4PASV2\\assets\\en169war.jpg"));
 		image5.setBounds(47, 484, 143, 200);
-		
+
 		Label nome5 = new Label(shell, SWT.NONE);
 		nome5.setText("Nissa, Abaladora do Mundo");
 		nome5.setFont(SWTResourceManager.getFont("Segoe UI", 15, SWT.NORMAL));
 		nome5.setBounds(196, 484, 251, 49);
-		
+
 		Label valor5 = new Label(shell, SWT.NONE);
 		valor5.setText("200,00");
 		valor5.setFont(SWTResourceManager.getFont("Segoe UI", 20, SWT.NORMAL));
 		valor5.setBounds(196, 539, 231, 49);
-		
+
 		Button check5 = new Button(shell, SWT.CHECK);
 		check5.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -212,21 +218,22 @@ public class List {
 		check5.setText("Adicionar ao carrinho");
 		check5.setFont(SWTResourceManager.getFont("Segoe UI", 15, SWT.NORMAL));
 		check5.setBounds(196, 594, 231, 49);
-		
+
 		Label image6 = new Label(shell, SWT.NONE);
-		image6.setImage(SWTResourceManager.getImage("C:\\Users\\Joao\\Documents\\projetos\\trabalhos\\E4PASV2\\assets\\en42rna.jpg"));
+		image6.setImage(SWTResourceManager
+				.getImage("C:\\Users\\Joao\\Documents\\projetos\\trabalhos\\E4PASV2\\assets\\en42rna.jpg"));
 		image6.setBounds(453, 484, 143, 200);
-		
+
 		Label nome6 = new Label(shell, SWT.NONE);
 		nome6.setText("Manipulacao em Massa");
 		nome6.setFont(SWTResourceManager.getFont("Segoe UI", 15, SWT.NORMAL));
 		nome6.setBounds(602, 484, 251, 49);
-		
+
 		Label valor6 = new Label(shell, SWT.NONE);
 		valor6.setText("5,00");
 		valor6.setFont(SWTResourceManager.getFont("Segoe UI", 20, SWT.NORMAL));
 		valor6.setBounds(602, 539, 231, 49);
-		
+
 		Button check6 = new Button(shell, SWT.CHECK);
 		check6.addSelectionListener(new SelectionAdapter() {
 			@Override

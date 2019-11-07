@@ -84,7 +84,7 @@ public class Confirmacao {
 	 */
 	protected void createContents(String string, String string2) {
 		shell = new Shell();
-		shell.setSize(1280, 1024);
+		shell.setSize(1056, 405);
 		shell.setText("SWT Application");
 
 		Button btnNewButton = new Button(shell, SWT.NONE);
@@ -95,7 +95,7 @@ public class Confirmacao {
 				shell.close();
 			}
 		});
-		btnNewButton.setBounds(10, 10, 643, 42);
+		btnNewButton.setBounds(10, 10, 1020, 42);
 		btnNewButton.setText("FINALIZAR");
 
 		Label nomes = new Label(shell, SWT.NONE);
