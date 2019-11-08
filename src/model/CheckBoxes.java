@@ -20,7 +20,13 @@ public class CheckBoxes extends Observable {
 	}
 
 	public boolean isCheck1() {
-		return check1;
+		if (check1 == true) {
+			setCheck1(false);
+			return true;
+		} else {
+			setCheck1(true);
+			return false;
+		}
 	}
 
 	public void setCheck1(boolean check1) {
@@ -28,7 +34,13 @@ public class CheckBoxes extends Observable {
 	}
 
 	public boolean isCheck2() {
-		return check2;
+		if (check2 == true) {
+			setCheck2(false);
+			return true;
+		} else {
+			setCheck2(true);
+			return false;
+		}
 	}
 
 	public void setCheck2(boolean check2) {
@@ -36,7 +48,13 @@ public class CheckBoxes extends Observable {
 	}
 
 	public boolean isCheck3() {
-		return check3;
+		if (check3 == true) {
+			setCheck3(false);
+			return true;
+		} else {
+			setCheck3(true);
+			return false;
+		}
 	}
 
 	public void setCheck3(boolean check3) {
@@ -44,7 +62,13 @@ public class CheckBoxes extends Observable {
 	}
 
 	public boolean isCheck4() {
-		return check4;
+		if (check4 == true) {
+			setCheck4(false);
+			return true;
+		} else {
+			setCheck4(true);
+			return false;
+		}
 	}
 
 	public void setCheck4(boolean check4) {
@@ -52,15 +76,28 @@ public class CheckBoxes extends Observable {
 	}
 
 	public boolean isCheck5() {
-		return check5;
+		if (check5 == true) {
+			setCheck5(false);
+			return true;
+		} else {
+			setCheck5(true);
+			return false;
+		}
 	}
 
 	public void setCheck5(boolean check5) {
 		this.check5 = check5;
+
 	}
 
 	public boolean isCheck6() {
-		return check6;
+		if (check6 == true) {
+			setCheck6(false);
+			return true;
+		} else {
+			setCheck6(true);
+			return false;
+		}
 	}
 
 	public void setCheck6(boolean check6) {

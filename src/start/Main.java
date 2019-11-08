@@ -1,11 +1,7 @@
 package start;
 
 import controller.Controller;
-import model.Carrinho;
-import model.CheckBoxes;
 import model.ModelsFachada;
-import model.PaymentMethod;
-import payment.Payment;
 import view.Confirmacao;
 import view.List;
 
@@ -20,7 +16,7 @@ public class Main {
 		//start controllers		
 		Controller c = new Controller(fachada);
 		
-		//start view
+		//start views
 		Confirmacao confirmacaoTela = new Confirmacao(c);		
 		List list = new List(c);
 		

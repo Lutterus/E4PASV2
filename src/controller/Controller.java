@@ -30,7 +30,7 @@ public class Controller {
 
 	public void check1() {
 		boolean aux = fachada.getcheckBox(1);
-		if (aux == false) {
+		if (aux) {
 			carrinhofactory.RemoveItem(1);
 		} else {
 			carrinhofactory.addItem(1);
@@ -39,7 +39,7 @@ public class Controller {
 
 	public void check2() {
 		boolean aux = fachada.getcheckBox(2);
-		if (aux == false) {
+		if (aux) {
 			carrinhofactory.RemoveItem(2);
 		} else {
 			carrinhofactory.addItem(2);
@@ -48,7 +48,7 @@ public class Controller {
 
 	public void check3() {
 		boolean aux = fachada.getcheckBox(3);
-		if (aux == false) {
+		if (aux) {
 			carrinhofactory.RemoveItem(3);
 		} else {
 			carrinhofactory.addItem(3);
@@ -57,7 +57,7 @@ public class Controller {
 
 	public void check4() {
 		boolean aux = fachada.getcheckBox(4);
-		if (aux == false) {
+		if (aux) {
 			carrinhofactory.RemoveItem(4);
 		} else {
 			carrinhofactory.addItem(4);
@@ -66,7 +66,7 @@ public class Controller {
 
 	public void check5() {
 		boolean aux = fachada.getcheckBox(5);
-		if (aux == false) {
+		if (aux) {
 			carrinhofactory.RemoveItem(5);
 		} else {
 			carrinhofactory.addItem(5);
@@ -75,7 +75,7 @@ public class Controller {
 
 	public void check6() {
 		boolean aux = fachada.getcheckBox(6);
-		if (aux == false) {
+		if (aux) {
 			carrinhofactory.RemoveItem(6);
 		} else {
 			carrinhofactory.addItem(6);
