@@ -1,6 +1,5 @@
 package payment;
 
-import controller.Payment;
 import view.Finalizar;
 
 public class CartaoCredito implements Payment {
